@@ -333,6 +333,7 @@ function Description () {
   return (<h3>This Website contains a list of 'cards' for each school in the NCAA</h3>)
 }
 
+// This code defines an interface called "SchoolProps" which specifies the properties that an object representing a school should have
 interface SchoolProps {
   school: string;
   name: string;
@@ -340,6 +341,7 @@ interface SchoolProps {
   state: string;
 }
 
+// This is a class component written in React, which is used to render a school's information based on the props passed to it.
 class School extends React.Component<SchoolProps> {
   render() {
     
@@ -355,6 +357,7 @@ class School extends React.Component<SchoolProps> {
   }
 }
 
+// This is a React function component called SchoolList that renders a list of School components
 function SchoolList() {
   return(
     <div>
@@ -363,6 +366,8 @@ function SchoolList() {
   );
 }
 
+// This is a React function component called "App" which returns a container 
+// div element that renders three child components
 function App() {
   return (
     <div>
